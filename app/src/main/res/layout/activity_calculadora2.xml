@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/activity_calculadora"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="0,1,2">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TxtVisor"
+            android:layout_alignParentEnd="true"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:background="@drawable/visor" />
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:id="@+id/btn_sete"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:id="@+id/btn_oito"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:id="@+id/btn_nove"
+                android:onClick="onClickGeneric" />
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/btn_quatro"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:id="@+id/btn_cinco"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:id="@+id/btn_seis"
+                android:onClick="onClickGeneric" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/btn_um"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:id="@+id/btn_dois"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:id="@+id/btn_tres"
+                android:onClick="onClickGeneric" />
+
+        </TableRow>
+
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:id="@+id/btn_menos"
+                android:onClick="onClickSinal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/button"
+                android:onClick="onClickGeneric" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:id="@+id/btn_ponto"
+                android:onClick="onClickGeneric" />
+
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:id="@+id/btn_divide"
+                android:onClick="onClickSinal"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:id="@+id/btn_mais"
+                android:onClick="onClickSinal"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:id="@+id/btn_multiplica"
+                android:onClick="onClickSinal"
+                android:textSize="24sp"
+                android:textStyle="normal|bold" />
+
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:id="@+id/btn_igual"
+            android:onClick="onClickCalcula"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:elevation="6dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIMPAR"
+            android:id="@+id/btn_limpar"
+            android:onClick="onClickLimpar"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:elevation="6dp" />
+
+    </TableLayout>
+</ScrollView>
